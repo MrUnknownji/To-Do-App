@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="add-task-container">
+      <input type="text" name="task" id="task-input" />
+      <button
+        type="button"
+        class="add-task-button"
+        onclick="addTaskButtonClickHandler()"
+      >
+        Add Task
+      </button>
+    </div>
+
+    <div class="both-list-container">
+      <div class="progress-list-container">
+        <p>Progress</p>
+        <ul class="progress-list"></ul>
+      </div>
+      <hr />
+      <div class="completed-list-container">
+        <p>Completed</p>
+        <ul class="completed-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>

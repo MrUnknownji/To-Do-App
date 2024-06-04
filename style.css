@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 800, "GRAD" 100, "opsz" 32;
+  cursor: pointer;
+  user-select: none;
+  transition: all 250ms;
+}
+.edit-button:hover {
+  color: rgb(158, 158, 0);
+}
+.delete-button:hover {
+  color: red;
+}
+:root {
+  --bg: #131515;
+  --containerColor: #d8c254;
+  --listBg: #a0fa96;
+  --buttonBg: #023047;
+  --buttonHoverBg: #075164;
+  --taskInputBg: #f0e1b9;
+}
+
+body {
+  font-optical-sizing: auto;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  background-color: var(--bg);
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+
+li {
+  list-style: none;
+  transition: all 300ms;
+}
+
+.add-task-container {
+  background-color: var(--containerColor);
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#task-input {
+  flex: 1;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 5px;
+  background-color: var(--taskInputBg);
+}
+.add-task-button {
+  background-color: var(--buttonBg);
+  border: 0px;
+  padding: 14px;
+  border-radius: 5px;
+  color: white;
+  transition: all 250ms;
+  font-size: large;
+}
+.add-task-button:hover {
+  background-color: var(--buttonHoverBg);
+}
+
+.both-list-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 5px;
+  margin: 20px 0;
+  font-size: x-large;
+}
+p {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 5px;
+}
+.progress-list-container,
+.completed-list-container {
+  flex: 1;
+  background-color: #4f4d3f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+ul {
+  width: 100%;
+  padding: 5px;
+}
+
+li {
+  color: black;
+  background-color: var(--listBg);
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 500;
+}
+
+.list-item-edit-box {
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 0 5px;
+  font-optical-sizing: auto;
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-size: x-large;
+  font-weight: 500;
+  background-color: var(--listBg);
+  color: black;
+}
+
+.inner-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.save-edits-button:hover {
+  color: green;
+}
+.cancle-edits-button:hover {
+  color: red;
+}
+.edit-delete-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.unchecked-button:hover,
+.checked-button:hover {
+  color: green;
+}
